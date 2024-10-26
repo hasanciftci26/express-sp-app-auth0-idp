@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset and Base Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle, #1c1e26, #2d2f3c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+        /* Login Container Styling */
+        .login-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .login-container:hover {
+            transform: translateY(-10px);
+        }
+        .login-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 300;
+            color: #f1f1f1;
+        }
+        /* Button Styling */
+        .login-container button {
+            background: linear-gradient(145deg, #ff416c, #ff4b2b);
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .login-container button:hover {
+            background: linear-gradient(145deg, #ff4b2b, #ff416c);
+            transform: scale(1.05);
+        }
+        /* Icon Styling */
+        .login-container i {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Sign In</h1>
+        <form action="/login" method="POST">
+            <button type="submit"><i class="fas fa-sign-in-alt"></i> Continue with SAML</button>
+        </form>
+    </div>
+</body>
+</html>
